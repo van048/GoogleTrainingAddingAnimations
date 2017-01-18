@@ -4,5 +4,10 @@
     <item
         android:id="@+id/menu_crossFade"
         android:title="@string/crossFade"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_jump"
+        android:title="@string/viewpager"
         app:showAsAction="always"/>
 </menu>

@@ -2,6 +2,7 @@ package cn.ben.googletrainingaddinganimations;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -68,6 +69,9 @@ public class CrossFadeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_crossFade) {
             crossFade();
+            return true;
+        } else if (item.getItemId() == R.id.menu_jump) {
+            startActivity(new Intent(this, ViewPagerActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);
