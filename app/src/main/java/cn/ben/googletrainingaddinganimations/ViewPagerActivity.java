@@ -1,5 +1,6 @@
 package cn.ben.googletrainingaddinganimations;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,6 +8,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class ViewPagerActivity extends AppCompatActivity {
 
@@ -73,5 +76,20 @@ public class ViewPagerActivity extends AppCompatActivity {
             // Otherwise, select the previous step.
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_viewpager, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.menu_jump) {
+            startActivity(new Intent(this, CardFlipActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

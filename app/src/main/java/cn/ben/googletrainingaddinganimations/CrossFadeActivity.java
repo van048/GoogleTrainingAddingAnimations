@@ -61,7 +61,7 @@ public class CrossFadeActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.my_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_crossfade, menu);
         return true;
     }
 
