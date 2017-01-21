@@ -5,5 +5,10 @@
     <item
         android:id="@+id/menu_cardFlip"
         android:title="@string/flip"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_jump"
+        android:title="@string/zoom"
         app:showAsAction="always"/>
 </menu>

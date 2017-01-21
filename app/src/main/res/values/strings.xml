@@ -8,4 +8,6 @@
     <string name="card_back_description">card back description</string>
     <string name="description_image_1">description image 1</string>
     <string name="flip">flip</string>
+    <string name="zoom">zoom</string>
+    <string name="description_zoom_touch_close">description zoom touch close</string>
 </resources>

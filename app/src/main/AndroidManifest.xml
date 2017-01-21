@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".CardFlipActivity">
         </activity>
+        <activity android:name=".ZoomActivity">
+        </activity>
     </application>
 
 </manifest>

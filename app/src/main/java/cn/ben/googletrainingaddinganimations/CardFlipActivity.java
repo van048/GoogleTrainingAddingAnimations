@@ -1,6 +1,7 @@
 package cn.ben.googletrainingaddinganimations;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -58,6 +59,9 @@ public class CardFlipActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_cardFlip) {
             flipCard();
+            return true;
+        } else if (item.getItemId() == R.id.menu_jump) {
+            startActivity(new Intent(this, ZoomActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);
